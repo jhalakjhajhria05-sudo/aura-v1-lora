@@ -1,0 +1,7 @@
+torch
+transformers
+peft
+bitsandbytes
+accelerate
+requests
+pillow
