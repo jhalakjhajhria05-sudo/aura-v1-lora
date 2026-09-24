@@ -77,8 +77,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import PeftModel
 
 base = AutoModelForCausalLM.from_pretrained("sarvamai/sarvam-2b", device_map="auto")
-model = PeftModel.from_pretrained(base, "YOUR_USERNAME/aura-v1-lora")
-tok = AutoTokenizer.from_pretrained("YOUR_USERNAME/aura-v1-lora")
+model = PeftModel.from_pretrained(base, "jhalakdev67dev/aura-v1-lora")
+tok = AutoTokenizer.from_pretrained("jhalakdev67dev/aura-v1-lora")
 ```
 
 > Note: the adapter expects the AURA system prompt (see `build_system_prompt()` in the one-file repo) — plain chat without it will still work but the skill-routing is trained for the agent format.
